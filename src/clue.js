@@ -97,7 +97,7 @@ const weaponsArray = [
 // ITERATION 2
 
 const selectRandom = (arr) => {
-  return ((arr.length === 1) ? arr[0] : arr[Math.floor(Math.random()*arr.length)]);
+  return (arr.length === 1) ? arr[0] : arr[Math.floor(Math.random()*arr.length)];
 }
 
 const pickMystery = () => {
