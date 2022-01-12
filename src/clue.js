@@ -100,18 +100,17 @@ function selectRandom(arr) {
   if (arr.length === 1) {
     return arr[0];
   } else {
-    let rand = arr[Math.floor(Math.random()*arr.length)];
-    return rand;
+    return arr[Math.floor(Math.random()*arr.length)];
   }
 }
 
 function pickMystery() {
-  let obj = {
+  return {
     suspect: selectRandom(suspectsArray),
     weapon: selectRandom(weaponsArray),
     room: selectRandom(roomsArray)
   };
-  return obj;
+
 }
 
 
